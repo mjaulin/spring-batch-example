@@ -24,6 +24,9 @@
                 <handler grid-size="10" task-executor="taskExecutor"/>
             </partition>
         </step>
+        <listeners>
+            <listener ref="jobCompletionNotificationListener"/>
+        </listeners>
     </job>
 
     <step id="slave" xmlns="http://www.springframework.org/schema/batch">
